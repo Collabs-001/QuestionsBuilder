@@ -1,2 +1,4 @@
 export { SearchBar } from './SearchBar';
-export { Replies } from './Replies';
+export { Reply } from './Reply';
+export { RepliesList } from './RepliesList';
+export { Form } from './Form';
