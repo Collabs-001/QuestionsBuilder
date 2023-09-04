@@ -1,85 +1,84 @@
 {
-  "Topic": "Frontend Development",
-  "Difficulty": "Intermediate",
-  "Comment": "For each topic, provide the following:",
-  "Questions": [
+  "topics": "fullstack,frontend",
+  "difficulty": "medium",
+  "comment": "For each topic, provide the following:",
+  "questions": [
     {
-      "Number": 1,
-      "Question": "What is HTML?",
-      "Options": [
-        "1: A programming language for creating web pages",
-        "2: A style sheet language for designing web pages",
-        "3: A markup language for structuring web content",
-        "4: A scripting language for adding interactivity to web pages"
+      "number": 1,
+      "question": "What is the difference between front-end and back-end development?",
+      "options": [
+        "1: Front-end is concerned with the user interface, while back-end focuses on server and database operations",
+        "2: Front-end is responsible for server and database operations, while back-end focuses on the user interface",
+        "3: There is no difference between front-end and back-end development",
+        "4: Front-end is responsible for both the user interface and server operations, while back-end focuses on the database"
       ],
-      "CorrectAnswer": "3: A markup language for structuring web content"
+      "answer": "1: Front-end is concerned with the user interface, while back-end focuses on server and database operations"
     },
     {
-      "Number": 2,
-      "Question": "What is CSS used for?",
-      "Options": [
-        "1: Adding interactivity to web pages",
-        "2: Styling the visual presentation of web pages",
-        "3: Structuring web content",
-        "4: Creating web page functionality"
+      "number": 2,
+      "question": "What is HTML?",
+      "options": [
+        "1: Hypertext Markup Language",
+        "2: Home Tool Markup Language",
+        "3: Hyper Transfer Markup Language",
+        "4: High Tech Markup Language"
       ],
-      "CorrectAnswer": "2: Styling the visual presentation of web pages"
+      "answer": "1: Hypertext Markup Language"
     },
     {
-      "Number": 3,
-      "Question": "Which language is used for adding interactivity to web pages?",
-      "Options": [
-        "1: HTML",
-        "2: CSS",
-        "3: JavaScript",
-        "4: Python"
+      "number": 3,
+      "question": "What is CSS?",
+      "options": [
+        "1: Cascading Style Sheets",
+        "2: Creative Style Sheets",
+        "3: Computer Style Sheets",
+        "4: Cascading System Sheets"
       ],
-      "CorrectAnswer": "3: JavaScript"
+      "answer": "1: Cascading Style Sheets"
     },
     {
-      "Number": 4,
-      "Question": "What is the purpose of a responsive web design?",
-      "Options": [
-        "1: To make web pages load faster",
-        "2: To improve search engine optimization",
-        "3: To make web pages adapt to different screen sizes",
-        "4: To add animations and effects to web pages"
+      "number": 4,
+      "question": "What is JavaScript?",
+      "options": [
+        "1: A programming language used for web development",
+        "2: A markup language used for styling web pages",
+        "3: A database management system",
+        "4: A web server"
       ],
-      "CorrectAnswer": "3: To make web pages adapt to different screen sizes"
+      "answer": "1: A programming language used for web development"
     },
     {
-      "Number": 5,
-      "Question": "What is the role of a frontend developer?",
-      "Options": [
-        "1: To develop the user interface of a website or application",
-        "2: To analyze and manage databases",
-        "3: To handle server-side programming and APIs",
-        "4: To design graphics and visual elements"
+      "number": 5,
+      "question": "What is a framework?",
+      "options": [
+        "1: A pre-designed template for building websites or applications",
+        "2: A programming language",
+        "3: A database management system",
+        "4: A web browser"
       ],
-      "CorrectAnswer": "1: To develop the user interface of a website or application"
+      "answer": "1: A pre-designed template for building websites or applications"
     }
   ],
-  "FAQs": {
+  "faqs": {
     "1": {
-      "Question": "What is the difference between HTML and HTML5?",
-      "Answer": "HTML5 is the latest version of HTML and introduces new elements and APIs for enhanced functionality and multimedia support."
+      "question": "What skills are required for full-stack development?",
+      "answer": "Full-stack developers are required to have knowledge of both front-end and back-end technologies, including HTML, CSS, JavaScript, server-side programming, and databases."
     },
     "2": {
-      "Question": "What is the purpose of a CSS framework?",
-      "Answer": "A CSS framework provides pre-defined styles and layout templates to streamline the frontend development process and ensure consistency across web pages."
+      "question": "What are some popular front-end frameworks?",
+      "answer": "Some popular front-end frameworks include React, Angular, and Vue.js."
     },
     "3": {
-      "Question": "What are JavaScript frameworks/libraries?",
-      "Answer": "JavaScript frameworks/libraries such as React, Angular, and Vue.js provide pre-built components and tools to simplify the development of dynamic and interactive web applications."
+      "question": "What is responsive web design?",
+      "answer": "Responsive web design is an approach to designing web pages that automatically adapts to different screen sizes and devices, providing an optimal viewing experience for users."
     },
     "4": {
-      "Question": "What is the difference between a frontend developer and a fullstack developer?",
-      "Answer": "A frontend developer focuses on the development of the user interface and user experience of a website or application, while a fullstack developer has knowledge of both frontend and backend development, handling server-side programming and database management as well."
+      "question": "What is the role of a front-end developer?",
+      "answer": "Front-end developers are responsible for implementing the visual and interactive elements of a website or application, using HTML, CSS, and JavaScript."
     },
     "5": {
-      "Question": "What is the role of responsive web design?",
-      "Answer": "Responsive web design ensures that web pages adapt and display correctly on different devices and screen sizes, providing an optimal user experience."
+      "question": "What is the role of a back-end developer?",
+      "answer": "Back-end developers are responsible for implementing the server-side logic and database management of a website or application."
     }
-  },
-  "comment": "Frontend Development topic has been generated."
+  }
 }
