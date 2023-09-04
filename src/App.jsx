@@ -2,12 +2,15 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css';
+import { SearchBar, Replies } from './components';
 
 function App() {
-  return (
-    <>
-    </>
-  )
+	return (
+		<main className='h-screen'>
+			<SearchBar />
+			<Replies />
+		</main>
+	);
 }
 
-export default App
+export default App;
