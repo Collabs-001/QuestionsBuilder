@@ -21,6 +21,6 @@ UI:
 3. Export the generated Output into csv/pdf
 
 Backend:
-1. make ChatGPT act as per the need/topic with relevant details
-2. provide questions, answers, faqs aligned with the topic and with details
+1. make ChatGPT act as per the need/topic with relevant details [DONE]
+2. provide questions, answers, faqs aligned with the topic and with details [DONE]
 

@@ -2,10 +2,12 @@ import mockData from '../../output.json';
 import { RepliesList } from './index';
 
 function Reply() {
+
+	console.log(mockData);
 	return (
 		<section className="flex justify-center mt-10">
 			<div>
-				<RepliesList repliesList={mockData.Questions} />
+				<RepliesList repliesList={mockData.questions} />
 				{/* <div
 					className={`mx-5 text-justify max-w-2xl p-8 rounded-md ${repliesStyles.repliesTxt}`}
 				>

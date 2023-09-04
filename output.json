@@ -1,84 +1,84 @@
 {
-  "Topic": "Frontend",
-  "Difficulty": "Easy",
-  "Comment": "For each topic, provide the following:",
-  "Questions": [
-    {
-      "Number": 1,
-      "Question": "What is HTML?",
-      "Options": [
-        "1: Hypertext Markup Language",
-        "2: Hyperlinks and Text Markup Language",
-        "3: Home Tool Markup Language",
-        "4: Hyper Texting Markup Language"
-      ],
-      "CorrectAnswer": "1"
-    },
-    {                                               
-      "Number": 2,
-      "Question": "What is CSS?",
-      "Options": [
-        "1: Cascading Style Sheet",
-        "2: Computer Style Sheet",
-        "3: Creative Style Sheet",
-        "4: Content Style Sheet"
-      ],
-      "CorrectAnswer": "1"
-    },
-    {
-      "Number": 3,
-      "Question": "What is JavaScript?",
-      "Options": [
-        "1: A programming language used for building interactive websites",
-        "2: A scripting language used for server-side programming",
-        "3: A database management system",
-        "4: A file transfer protocol"
-      ],
-      "CorrectAnswer": "1"
-    },
-    {
-      "Number": 4,
-      "Question": "What is a DOM?",
-      "Options": [
-        "1: Document Oriented Model",
-        "2: Digital Object Model",
-        "3: Document Object Model",
-        "4: Data Object Model"
-      ],
-      "CorrectAnswer": "3"
-    },
-    {
-      "Number": 5,
-      "Question": "What is a responsive web design?",
-      "Options": [
-        "1: A design that works only on desktop devices",
-        "2: A design that works only on mobile devices",
-        "3: A design that adjusts to different screen sizes",
-        "4: A design that works only on tablets"
-      ],
-      "CorrectAnswer": "3"
-    }
-  ],
-  "FAQs": {
-    "1": {
-      "Question": "What is the difference between HTML and CSS?",
-      "Answer": "HTML is used to structure the content of a webpage, while CSS is used to style and format the content."
-    },
-    "2": {
-      "Question": "What are some popular frontend frameworks?",
-      "Answer": "Some popular frontend frameworks are React, Angular, and Vue.js."
-    },
-    "3": {
-      "Question": "What is the box model in CSS?",
-      "Answer": "The box model is a concept in CSS that describes how elements are rendered on a webpage, including their dimensions, padding, border, and margin."
-    },
-    "4": {
-      "Question": "What is the purpose of media queries in responsive web design?",
-      "Answer": "Media queries allow developers to apply different styles to a webpage based on the characteristics of the device it is being viewed on, such as screen size and orientation."
-    },
-    "5": {
-      "Question": "What is the role of JavaScript in frontend development?",
-      "Answer": "JavaScript is used to add interactivity and dynamic functionality to a webpage, such as form validation, fetching data from servers, and creating interactive UI components."
-    }
-  }
+	"topics": "fullstack,frontend",
+	"difficulty": "medium",
+	"comment": "For each topic, provide the following:",
+	"questions": [
+		{
+			"number": 1,
+			"question": "What is the difference between front-end and back-end development?",
+			"options": [
+				"1: Front-end is concerned with the user interface, while back-end focuses on server and database operations",
+				"2: Front-end is responsible for server and database operations, while back-end focuses on the user interface",
+				"3: There is no difference between front-end and back-end development",
+				"4: Front-end is responsible for both the user interface and server operations, while back-end focuses on the database"
+			],
+			"answer": "1: Front-end is concerned with the user interface, while back-end focuses on server and database operations"
+		},
+		{
+			"number": 2,
+			"question": "What is HTML?",
+			"options": [
+				"1: Hypertext Markup Language",
+				"2: Home Tool Markup Language",
+				"3: Hyper Transfer Markup Language",
+				"4: High Tech Markup Language"
+			],
+			"answer": "1: Hypertext Markup Language"
+		},
+		{
+			"number": 3,
+			"question": "What is CSS?",
+			"options": [
+				"1: Cascading Style Sheets",
+				"2: Creative Style Sheets",
+				"3: Computer Style Sheets",
+				"4: Cascading System Sheets"
+			],
+			"answer": "1: Cascading Style Sheets"
+		},
+		{
+			"number": 4,
+			"question": "What is JavaScript?",
+			"options": [
+				"1: A programming language used for web development",
+				"2: A markup language used for styling web pages",
+				"3: A database management system",
+				"4: A web server"
+			],
+			"answer": "1: A programming language used for web development"
+		},
+		{
+			"number": 5,
+			"question": "What is a framework?",
+			"options": [
+				"1: A pre-designed template for building websites or applications",
+				"2: A programming language",
+				"3: A database management system",
+				"4: A web browser"
+			],
+			"answer": "1: A pre-designed template for building websites or applications"
+		}
+	],
+	"faqs": {
+		"1": {
+			"question": "What skills are required for full-stack development?",
+			"answer": "Full-stack developers are required to have knowledge of both front-end and back-end technologies, including HTML, CSS, JavaScript, server-side programming, and databases."
+		},
+		"2": {
+			"question": "What are some popular front-end frameworks?",
+			"answer": "Some popular front-end frameworks include React, Angular, and Vue.js."
+		},
+		"3": {
+			"question": "What is responsive web design?",
+			"answer": "Responsive web design is an approach to designing web pages that automatically adapts to different screen sizes and devices, providing an optimal viewing experience for users."
+		},
+		"4": {
+			"question": "What is the role of a front-end developer?",
+			"answer": "Front-end developers are responsible for implementing the visual and interactive elements of a website or application, using HTML, CSS, and JavaScript."
+		},
+		"5": {
+			"question": "What is the role of a back-end developer?",
+			"answer": "Back-end developers are responsible for implementing the server-side logic and database management of a website or application."
+		}
+	}
 }
