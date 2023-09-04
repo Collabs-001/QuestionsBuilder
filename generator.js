@@ -1,7 +1,10 @@
-import os
-import openai
+import OpenAI from 'openai';
 
-base_prompt = """
+const openai = new OpenAI({
+    apiKey: process.env.OPENAI_API_KEY,
+});
+
+const basePrompt = `
 {
   "Topic": "[List of topics]",
   "Difficulty": "[Specify the difficulty level]",
@@ -86,25 +89,21 @@ base_prompt = """
     }
   },
   "comment": "[Repeat the above sections for each topic, give me 5 questions and 5 FAQ's, questions can have code and in the same JSON format]"
+}`;
+
+export async function generateQuestions(userInput) {
+    try {
+        const chatCompletion = await openai.chat.completions.create({
+            messages: [
+                { role: "system", content: basePrompt },
+                { role: "user", content: `User Input: ${userInput}` }
+            ],
+            model: "gpt-3.5-turbo",
+        });
+
+        return chatCompletion.choices[0].message.content;
+
+    } catch (error) {
+        console.error("Error:", error);
+    }
 }
-"""
-
-def generate_questions(user_input, base_prompt):
-    # Concatenate user input to the base prompt
-    prompt = f"{base_prompt}\nUser Input: {user_input}"
-
-    # Read OpenAI API key from environment
-    openai.api_key = os.environ.get('OPENAI_API_KEY')
-
-    messages = [{"role": "system", "content": prompt}]
-
-    chat = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo", messages=messages
-    )
-    reply = chat.choices[0].message.content
-
-    return reply
-
-response = generate_questions("frontend,fullstack", base_prompt)
-with open("output.json", "w") as output:
-    output.write(response)

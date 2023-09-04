@@ -1,84 +1,85 @@
 {
-  "Topic": "Frontend",
-  "Difficulty": "Easy",
+  "Topic": "Frontend Development",
+  "Difficulty": "Intermediate",
   "Comment": "For each topic, provide the following:",
   "Questions": [
     {
       "Number": 1,
       "Question": "What is HTML?",
       "Options": [
-        "1: Hypertext Markup Language",
-        "2: Hyperlinks and Text Markup Language",
-        "3: Home Tool Markup Language",
-        "4: Hyper Texting Markup Language"
+        "1: A programming language for creating web pages",
+        "2: A style sheet language for designing web pages",
+        "3: A markup language for structuring web content",
+        "4: A scripting language for adding interactivity to web pages"
       ],
-      "CorrectAnswer": "1"
+      "CorrectAnswer": "3: A markup language for structuring web content"
     },
     {
       "Number": 2,
-      "Question": "What is CSS?",
+      "Question": "What is CSS used for?",
       "Options": [
-        "1: Cascading Style Sheet",
-        "2: Computer Style Sheet",
-        "3: Creative Style Sheet",
-        "4: Content Style Sheet"
+        "1: Adding interactivity to web pages",
+        "2: Styling the visual presentation of web pages",
+        "3: Structuring web content",
+        "4: Creating web page functionality"
       ],
-      "CorrectAnswer": "1"
+      "CorrectAnswer": "2: Styling the visual presentation of web pages"
     },
     {
       "Number": 3,
-      "Question": "What is JavaScript?",
+      "Question": "Which language is used for adding interactivity to web pages?",
       "Options": [
-        "1: A programming language used for building interactive websites",
-        "2: A scripting language used for server-side programming",
-        "3: A database management system",
-        "4: A file transfer protocol"
+        "1: HTML",
+        "2: CSS",
+        "3: JavaScript",
+        "4: Python"
       ],
-      "CorrectAnswer": "1"
+      "CorrectAnswer": "3: JavaScript"
     },
     {
       "Number": 4,
-      "Question": "What is a DOM?",
+      "Question": "What is the purpose of a responsive web design?",
       "Options": [
-        "1: Document Oriented Model",
-        "2: Digital Object Model",
-        "3: Document Object Model",
-        "4: Data Object Model"
+        "1: To make web pages load faster",
+        "2: To improve search engine optimization",
+        "3: To make web pages adapt to different screen sizes",
+        "4: To add animations and effects to web pages"
       ],
-      "CorrectAnswer": "3"
+      "CorrectAnswer": "3: To make web pages adapt to different screen sizes"
     },
     {
       "Number": 5,
-      "Question": "What is a responsive web design?",
+      "Question": "What is the role of a frontend developer?",
       "Options": [
-        "1: A design that works only on desktop devices",
-        "2: A design that works only on mobile devices",
-        "3: A design that adjusts to different screen sizes",
-        "4: A design that works only on tablets"
+        "1: To develop the user interface of a website or application",
+        "2: To analyze and manage databases",
+        "3: To handle server-side programming and APIs",
+        "4: To design graphics and visual elements"
       ],
-      "CorrectAnswer": "3"
+      "CorrectAnswer": "1: To develop the user interface of a website or application"
     }
   ],
   "FAQs": {
     "1": {
-      "Question": "What is the difference between HTML and CSS?",
-      "Answer": "HTML is used to structure the content of a webpage, while CSS is used to style and format the content."
+      "Question": "What is the difference between HTML and HTML5?",
+      "Answer": "HTML5 is the latest version of HTML and introduces new elements and APIs for enhanced functionality and multimedia support."
     },
     "2": {
-      "Question": "What are some popular frontend frameworks?",
-      "Answer": "Some popular frontend frameworks are React, Angular, and Vue.js."
+      "Question": "What is the purpose of a CSS framework?",
+      "Answer": "A CSS framework provides pre-defined styles and layout templates to streamline the frontend development process and ensure consistency across web pages."
     },
     "3": {
-      "Question": "What is the box model in CSS?",
-      "Answer": "The box model is a concept in CSS that describes how elements are rendered on a webpage, including their dimensions, padding, border, and margin."
+      "Question": "What are JavaScript frameworks/libraries?",
+      "Answer": "JavaScript frameworks/libraries such as React, Angular, and Vue.js provide pre-built components and tools to simplify the development of dynamic and interactive web applications."
     },
     "4": {
-      "Question": "What is the purpose of media queries in responsive web design?",
-      "Answer": "Media queries allow developers to apply different styles to a webpage based on the characteristics of the device it is being viewed on, such as screen size and orientation."
+      "Question": "What is the difference between a frontend developer and a fullstack developer?",
+      "Answer": "A frontend developer focuses on the development of the user interface and user experience of a website or application, while a fullstack developer has knowledge of both frontend and backend development, handling server-side programming and database management as well."
     },
     "5": {
-      "Question": "What is the role of JavaScript in frontend development?",
-      "Answer": "JavaScript is used to add interactivity and dynamic functionality to a webpage, such as form validation, fetching data from servers, and creating interactive UI components."
+      "Question": "What is the role of responsive web design?",
+      "Answer": "Responsive web design ensures that web pages adapt and display correctly on different devices and screen sizes, providing an optimal user experience."
     }
-  }
+  },
+  "comment": "Frontend Development topic has been generated."
 }
