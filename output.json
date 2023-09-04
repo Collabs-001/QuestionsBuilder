@@ -1,0 +1,84 @@
+{
+  "Topic": "Frontend",
+  "Difficulty": "Easy",
+  "Comment": "For each topic, provide the following:",
+  "Questions": [
+    {
+      "Number": 1,
+      "Question": "What is HTML?",
+      "Options": [
+        "1: Hypertext Markup Language",
+        "2: Hyperlinks and Text Markup Language",
+        "3: Home Tool Markup Language",
+        "4: Hyper Texting Markup Language"
+      ],
+      "CorrectAnswer": "1"
+    },
+    {
+      "Number": 2,
+      "Question": "What is CSS?",
+      "Options": [
+        "1: Cascading Style Sheet",
+        "2: Computer Style Sheet",
+        "3: Creative Style Sheet",
+        "4: Content Style Sheet"
+      ],
+      "CorrectAnswer": "1"
+    },
+    {
+      "Number": 3,
+      "Question": "What is JavaScript?",
+      "Options": [
+        "1: A programming language used for building interactive websites",
+        "2: A scripting language used for server-side programming",
+        "3: A database management system",
+        "4: A file transfer protocol"
+      ],
+      "CorrectAnswer": "1"
+    },
+    {
+      "Number": 4,
+      "Question": "What is a DOM?",
+      "Options": [
+        "1: Document Oriented Model",
+        "2: Digital Object Model",
+        "3: Document Object Model",
+        "4: Data Object Model"
+      ],
+      "CorrectAnswer": "3"
+    },
+    {
+      "Number": 5,
+      "Question": "What is a responsive web design?",
+      "Options": [
+        "1: A design that works only on desktop devices",
+        "2: A design that works only on mobile devices",
+        "3: A design that adjusts to different screen sizes",
+        "4: A design that works only on tablets"
+      ],
+      "CorrectAnswer": "3"
+    }
+  ],
+  "FAQs": {
+    "1": {
+      "Question": "What is the difference between HTML and CSS?",
+      "Answer": "HTML is used to structure the content of a webpage, while CSS is used to style and format the content."
+    },
+    "2": {
+      "Question": "What are some popular frontend frameworks?",
+      "Answer": "Some popular frontend frameworks are React, Angular, and Vue.js."
+    },
+    "3": {
+      "Question": "What is the box model in CSS?",
+      "Answer": "The box model is a concept in CSS that describes how elements are rendered on a webpage, including their dimensions, padding, border, and margin."
+    },
+    "4": {
+      "Question": "What is the purpose of media queries in responsive web design?",
+      "Answer": "Media queries allow developers to apply different styles to a webpage based on the characteristics of the device it is being viewed on, such as screen size and orientation."
+    },
+    "5": {
+      "Question": "What is the role of JavaScript in frontend development?",
+      "Answer": "JavaScript is used to add interactivity and dynamic functionality to a webpage, such as form validation, fetching data from servers, and creating interactive UI components."
+    }
+  }
+}
