@@ -33,6 +33,9 @@ function Reply({ repliesList }) {
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap -mx-4">
           <div className="w-full lg:w-1/2 px-4 mb-6">
+						<h4 className='text-xl font-bold mt-3 mb-5'>
+							Difficulty: {repliesList?.difficulty}
+						</h4>
             <RepliesList repliesList={repliesList?.questions} />
           </div>
           <div className="w-full lg:w-1/2 px-4">
