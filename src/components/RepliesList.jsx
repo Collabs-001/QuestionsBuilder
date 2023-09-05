@@ -26,8 +26,9 @@ function RepliesList({ repliesList }) {
 							))}
 						</ul>
 					</div>
-					<p className="mt-3 font-bold">
-						Correct answer: {reply?.answer.replace(':', '.')}
+					<p className="mt-3 font-bold mb-5">
+						Correct answer:
+						<p>{reply?.answer.replace(':', '.')}</p>
 					</p>
 				</div>
 			))}
