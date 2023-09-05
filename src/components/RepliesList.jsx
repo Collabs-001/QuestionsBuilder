@@ -14,7 +14,7 @@ function RepliesList({ repliesList }) {
 	};
 
 	// Format the date and time
-    const istDateTime = currentDate.toLocaleString('en-US', options);
+	const istDateTime = currentDate.toLocaleString('en-US', options);
 	return (
 		<div
 			className={`mx-5 text-justify max-w-2xl p-8 rounded-md ${repliesListStyles.repliesTxt}`}
@@ -27,14 +27,16 @@ function RepliesList({ repliesList }) {
 					<div className="mb-5">
 						Q{index + 1}: {reply.question}
 					</div>
-					<div>
+					<div className={`${repliesListStyles.options}`}>
 						<ul>
 							{reply.options.map((option, optionIndex) => (
-								<li key={optionIndex}>{option}</li>
+								<li key={optionIndex}>{option.replace(':', '.')}</li>
 							))}
 						</ul>
 					</div>
-					<p className="mt-3 font-bold">Correct answer: {reply.answer}</p>
+					<p className="mt-3 font-bold">
+						Correct answer: {reply.answer.replace(':', '.')}
+					</p>
 				</div>
 			))}
 			<p className="text-right mt-2 mr-5">{istDateTime}</p>
