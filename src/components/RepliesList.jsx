@@ -24,8 +24,8 @@ function RepliesList({ repliesList }) {
 					key={index}
 					className={`mx-5 text-justify max-w-2xl p-8 rounded-md ${repliesListStyles.repliesTxt}`}
 				>
-					<div>
-						{index + 1}. {reply.question}
+					<div className="mb-5">
+						Q{index + 1}: {reply.question}
 					</div>
 					<div>
 						<ul>
@@ -34,7 +34,7 @@ function RepliesList({ repliesList }) {
 							))}
 						</ul>
 					</div>
-					<p className="mt-3 font-bold">Correct answer is: {reply.answer}</p>
+					<p className="mt-3 font-bold">Correct answer: {reply.answer}</p>
 				</div>
 			))}
 			<p className="text-right mt-2 mr-5">{istDateTime}</p>
