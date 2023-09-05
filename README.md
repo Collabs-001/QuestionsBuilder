@@ -14,6 +14,9 @@ Backend:
 1. make ChatGPT act as per the need/topic with relevant details ``[DONE]``
 2. provide questions, answers, faqs aligned with the topic and with details ``[DONE]``
 
+Preview:
+![Preview](./screenshots/screenrecord.gif)
+
 Screenshots:
 ![ScreenShot](./screenshots/screenshot-1.png)
 ![ScreenShot](./screenshots/screenshot-2.png)
