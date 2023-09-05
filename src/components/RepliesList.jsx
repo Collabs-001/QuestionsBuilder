@@ -1,24 +1,19 @@
 import repliesListStyles from './RepliesList.module.css';
 
 function RepliesList({ repliesList }) {
-	// Create a new Date object
 	const currentDate = new Date();
 
-	// Define options for formatting
 	const options = {
-		timeZone: 'Asia/Kolkata', // Set the time zone to IST
-		weekday: 'short', // Display abbreviated day name (e.g., "Mon," "Tue")
-		hour: '2-digit', // Display hours in 2-digit format
-		minute: '2-digit', // Display minutes in 2-digit format
-		second: '2-digit', // Display seconds in 2-digit format
+		timeZone: 'Asia/Kolkata',
+		weekday: 'short',
+		hour: '2-digit',
+		minute: '2-digit',
+		second: '2-digit',
 	};
 
-	// Format the date and time
 	const istDateTime = currentDate.toLocaleString('en-US', options);
 	return (
-		<div
-			className="mx-5 text-justify max-w-2xl p-8 rounded-md"
-		>
+		<div className="mx-5 text-justify max-w-2xl  rounded-md">
 			{repliesList?.map((reply, index) => (
 				<div
 					key={index}
