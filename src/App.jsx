@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import { Reply, Form } from './components';
+import { Form } from './components';
 
 function App() {
 	const [noOfFaqs, setFaqsCount] = useState(undefined);

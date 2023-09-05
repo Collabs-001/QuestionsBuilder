@@ -33,16 +33,10 @@ function Form({
 			});
 	}
 
-	useEffect(() => {
-		// console.log(chatGPTRes.type);
-		// console.log(chatGPTRes);
-	}, [chatGPTRes]);
-
 	function setSearchTopicHandler(event) {
 		setSearchTopic(event.target.value);
 	}
 
-	// Function to save JSON data to a file
 	function saveJSONToFile(jsonData) {
 		const blob = new Blob([JSON.stringify(jsonData, null, 2)], {
 			type: 'application/json',
@@ -69,7 +63,10 @@ function Form({
 					required
 					placeholder="FAQ's count"
 					value={noOfFaqs}
-					onChange={(e) => setFaqsCount(e.target.value)}
+					onChange={(e) => {
+						const newVal = e.target.value.replace('-', '');
+						setFaqsCount(newVal);
+					}}
 				/>
 				<input
 					className="flex-1 p-3 rounded-md border focus:outline-none focus:border-blue-500"
@@ -78,7 +75,10 @@ function Form({
 					required
 					placeholder="Questions count"
 					value={noOfQuestions}
-					onChange={(e) => setQuestionsCount(e.target.value)}
+					onChange={(e) => {
+						const faqValue = e.target.value.replace('-', '');
+						setQuestionsCount(faqValue);
+					}}
 				/>
 				<button
 					type="submit"
@@ -92,14 +92,14 @@ function Form({
 				</button>
 			</div>
 
-      {chatGPTRes !== null && (
-        <>
-          {!loading && Object.keys(chatGPTRes).length === 0 && !error && (
-            <div className="text-center mt-5 font-bold text-2xl">
-              Could not generate questions for the given topic. Please try
-              again!
-            </div>
-          )}
+			{chatGPTRes !== null && (
+				<>
+					{!loading && Object.keys(chatGPTRes).length === 0 && !error && (
+						<div className="text-center mt-5 font-bold text-2xl">
+							Could not generate questions for the given topic. Please try
+							again!
+						</div>
+					)}
 
 					{!loading && error && (
 						<div className="text-center mt-5 text-red-500 font-bold text-2xl">
