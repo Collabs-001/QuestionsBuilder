@@ -56,7 +56,7 @@ function Form({
 	}
 
 	return (
-		<div className="min-w-min bg-white p-6 rounded-lg shadow-md">
+		<div className="w-min bg-white p-6 rounded-lg shadow-md mb-12">
 			<div className="flex flex-col md:flex-row gap-4">
 				<SearchBar
 					searchTopic={searchTopic}

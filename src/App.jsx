@@ -9,7 +9,7 @@ function App() {
 
 	return (
 		<div className="min-h-screen flex flex-col justify-center items-center">
-			<header className="bg-blue-500 text-white py-4 px-8 rounded-lg shadow-md">
+			<header className="mt-3 bg-blue-500 text-white py-4 px-8 rounded-lg shadow-md">
 				<a className="text-2xl font-bold mt-3" href=".">
 					Questions Builder
 				</a>
