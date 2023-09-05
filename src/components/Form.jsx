@@ -94,11 +94,6 @@ function Form({
 
       {chatGPTRes !== null && (
         <>
-          {loading && (
-            <div className="text-center mt-5 font-bold text-2xl">
-              Loading...
-            </div>
-          )}
           {!loading && Object.keys(chatGPTRes).length === 0 && !error && (
             <div className="text-center mt-5 font-bold text-2xl">
               Could not generate questions for the given topic. Please try
