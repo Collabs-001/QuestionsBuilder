@@ -1,0 +1,10 @@
+.faq-row-wrapper {
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+.faq-title,
+.row-title {
+    font-weight: bold;
+}

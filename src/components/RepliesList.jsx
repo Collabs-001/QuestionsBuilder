@@ -19,23 +19,23 @@ function RepliesList({ repliesList }) {
 		<div
 			className={`mx-5 text-justify max-w-2xl p-8 rounded-md ${repliesListStyles.repliesTxt}`}
 		>
-			{repliesList.map((reply, index) => (
+			{repliesList?.map((reply, index) => (
 				<div
 					key={index}
 					className={`mx-5 text-justify max-w-2xl p-8 rounded-md ${repliesListStyles.repliesTxt}`}
 				>
 					<div className="mb-5">
-						Q{index + 1}: {reply.question}
+						Q{index + 1}: {reply?.question}
 					</div>
 					<div className={`${repliesListStyles.options}`}>
 						<ul>
 							{reply.options.map((option, optionIndex) => (
-								<li key={optionIndex}>{option.replace(':', '.')}</li>
+								<li key={optionIndex}>{option?.replace(':', '.')}</li>
 							))}
 						</ul>
 					</div>
 					<p className="mt-3 font-bold">
-						Correct answer: {reply.answer.replace(':', '.')}
+						Correct answer: {reply?.answer.replace(':', '.')}
 					</p>
 				</div>
 			))}

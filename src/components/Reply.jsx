@@ -1,4 +1,4 @@
-import mockData from '../../output.json';
+// import mockData from '../../output.json';
 import Faq from 'react-faq-component';
 import { RepliesList } from './index';
 
@@ -9,12 +9,12 @@ function Reply({ repliesList }) {
 		rows: [],
 	};
 
-	for (const key in mockData.faqs) {
-		if (mockData.faqs.hasOwnProperty(key)) {
-			const faq = mockData.faqs[key];
+	for (const key in repliesList?.faqs) {
+		if (repliesList?.faqs.hasOwnProperty(key)) {
+			const faq = repliesList?.faqs[key];
 			const row = {
-				title: faq.question,
-				content: faq.answer,
+				title: faq?.question,
+				content: faq?.answer,
 			};
 			data.rows.push(row);
 		}
@@ -41,7 +41,7 @@ function Reply({ repliesList }) {
 					<div>No result</div>
 				) : (
 					<div>
-						<RepliesList repliesList={repliesList.questions} />
+						<RepliesList repliesList={repliesList?.questions} />
 						<div class="mx-5 text-justify max-w-2xl p-8 rounded-md _repliesTxt_pbitv_1">
 							<Faq data={data} styles={styles} config={config} />
 						</div>

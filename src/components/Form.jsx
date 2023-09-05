@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Reply } from '.';
 import { SearchBar } from './SearchBar';
+import { generateQuestions } from '../../generator';
 
 function Form({
 	noOfFaqs,
@@ -14,9 +15,10 @@ function Form({
 
 	function submitFormHandler(event) {
 		event.preventDefault();
-		fetch('../../output.json')
+		// fetch('../../output.json')
+		generateQuestions(searchTopic, noOfQuestions, noOfFaqs)
 			.then((res) => {
-				return res.json();
+				return res;
 			})
 			.then((data) => {
 				console.log(data);
@@ -28,7 +30,7 @@ function Form({
 	}
 
 	useEffect(() => {
-		console.log("CHANGED");
+		console.log('CHANGED');
 	}, [chatGPTRes]);
 
 	function setSearchTopicHandler(event) {
@@ -66,7 +68,7 @@ function Form({
 					Generate
 				</button>
 			</div>
-			<Reply repliesList={chatGPTRes} />
+			{Object.keys(chatGPTRes).length > 0 && <Reply repliesList={chatGPTRes} />}
 		</>
 	);
 }
