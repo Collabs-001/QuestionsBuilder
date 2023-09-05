@@ -42,7 +42,7 @@ function Reply({ repliesList }) {
 				) : (
 					<div>
 						<RepliesList repliesList={repliesList?.questions} />
-						<div class="mx-5 text-justify max-w-2xl p-8 rounded-md _repliesTxt_pbitv_1">
+						<div className="mx-5 text-justify max-w-2xl p-8 rounded-md _repliesTxt_pbitv_1">
 							<Faq data={data} styles={styles} config={config} />
 						</div>
 					</div>
