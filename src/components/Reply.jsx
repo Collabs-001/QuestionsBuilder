@@ -20,11 +20,13 @@ function Reply({ repliesList }) {
     arrowColor: 'blue', // Arrow color
   };
 
-  const config = {
-    animate: true, // Enable animation
-    arrowIcon: 'V', // Arrow icon (can be customized)
-    tabFocus: true, // Enable tab focus
-  };
+	const config = {
+    animate: true,
+    arrowIcon: "V",
+    openOnload: 0,
+    expandIcon: "+",
+    collapseIcon: "-",
+};
 
   return (
     <section className="mt-10">
