@@ -1,14 +1,18 @@
 import mockData from '../../output.json';
 import { RepliesList } from './index';
 
-function Reply() {
-
-	console.log(mockData);
+function Reply({ repliesList }) {
+	console.log(repliesList, '======>');
+	console.log(repliesList.length);
 	return (
 		<section className="flex justify-center mt-10">
 			<div>
-				<RepliesList repliesList={mockData.questions} />
-				{/* <div
+				{Object.keys(repliesList).length === 0 ? (
+					<div>No result</div>
+				) : (
+					<RepliesList repliesList={repliesList.questions} />
+				)}
+				{/* <div 
 					className={`mx-5 text-justify max-w-2xl p-8 rounded-md ${repliesStyles.repliesTxt}`}
 				>
 					1. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
