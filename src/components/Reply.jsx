@@ -1,6 +1,7 @@
 // import mockData from '../../output.json';
 import Faq from 'react-faq-component';
 import { RepliesList } from './index';
+import "./Reply.css";
 
 function Reply({ repliesList }) {
 	
@@ -42,7 +43,7 @@ function Reply({ repliesList }) {
 				) : (
 					<div>
 						<RepliesList repliesList={repliesList?.questions} />
-						<div className="mx-5 text-justify max-w-2xl p-8 rounded-md _repliesTxt_pbitv_1">
+						<div className="mx-5 text-justify max-w-2xl rounded-md">
 							<Faq data={data} styles={styles} config={config} />
 						</div>
 					</div>

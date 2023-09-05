@@ -24,7 +24,7 @@ function RepliesList({ repliesList }) {
 					key={index}
 					className={`mx-5 text-justify max-w-2xl p-8 rounded-md ${repliesListStyles.repliesTxt}`}
 				>
-					<div className="mb-5">
+					<div className="mb-5 font-bold">
 						Q{index + 1}: {reply?.question}
 					</div>
 					<div className={`${repliesListStyles.options}`}>
