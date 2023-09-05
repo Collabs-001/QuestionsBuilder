@@ -20,8 +20,8 @@ function Form({
 
     generateQuestions(searchTopic, noOfQuestions, noOfFaqs)
       .then((data) => {
-        console.log(data);
-        setChatGPTRes(data);
+        // console.log(data);
+        setChatGPTRes(JSON.parse(data));
       })
       .catch((err) => {
         console.error(err);
@@ -32,7 +32,8 @@ function Form({
   }
 
   useEffect(() => {
-    console.log('CHANGED');
+    // console.log(chatGPTRes.type);
+    // console.log(chatGPTRes);
   }, [chatGPTRes]);
 
   function setSearchTopicHandler(event) {
@@ -68,7 +69,7 @@ function Form({
           {loading ? 'Generating...' : 'Generate'}
         </button>
       </div>
-      {Object.keys(chatGPTRes).length > 0 && <Reply repliesList={chatGPTRes} />}
+      {!loading && Object.keys(chatGPTRes).length > 0 && <Reply repliesList={chatGPTRes} />}
     </>
   );
 }
