@@ -17,12 +17,12 @@ function RepliesList({ repliesList }) {
 	const istDateTime = currentDate.toLocaleString('en-US', options);
 	return (
 		<div
-			className={`mx-5 text-justify max-w-2xl p-8 rounded-md ${repliesListStyles.repliesTxt}`}
+			className="mx-5 text-justify max-w-2xl p-8 rounded-md"
 		>
 			{repliesList?.map((reply, index) => (
 				<div
 					key={index}
-					className={`mx-5 text-justify max-w-2xl p-8 rounded-md ${repliesListStyles.repliesTxt}`}
+					className="mx-5 text-justify max-w-2xl p-8 rounded-md ${repliesListStyles.repliesTxt"
 				>
 					<div className="mb-5 font-bold">
 						Q{index + 1}: {reply?.question}
