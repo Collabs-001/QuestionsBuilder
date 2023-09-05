@@ -10,7 +10,7 @@ function App() {
 	let [noOfQuestions, setQuestionsCount] = useState(undefined);
 
 	return (
-		<main className="">
+		<main>
 			<Form
 				noOfFaqs={noOfFaqs}
 				noOfQuestions={noOfQuestions}

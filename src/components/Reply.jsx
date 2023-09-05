@@ -1,10 +1,9 @@
 // import mockData from '../../output.json';
 import Faq from 'react-faq-component';
 import { RepliesList } from './index';
-import "./Reply.css";
+import './Reply.css';
 
 function Reply({ repliesList }) {
-	
 	const data = {
 		title: 'Frequently Asked Questions',
 		rows: [],
@@ -38,16 +37,12 @@ function Reply({ repliesList }) {
 	return (
 		<section className="flex justify-center mt-10">
 			<div>
-				{Object.keys(repliesList).length === 0 ? (
-					<div>No result</div>
-				) : (
-					<div>
-						<RepliesList repliesList={repliesList?.questions} />
-						<div className="mx-5 text-justify max-w-2xl rounded-md">
-							<Faq data={data} styles={styles} config={config} />
-						</div>
+				<div>
+					<RepliesList repliesList={repliesList?.questions} />
+					<div className="mx-5 text-justify max-w-2xl rounded-md">
+						<Faq data={data} styles={styles} config={config} />
 					</div>
-				)}
+				</div>
 			</div>
 		</section>
 	);
