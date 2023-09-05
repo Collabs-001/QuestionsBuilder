@@ -49,7 +49,9 @@ function Form({
 				/>
 				<input
 					className="m-5 p-3 rounded"
+					min={1}
 					type="number"
+					required
 					placeholder="FAQ's count"
 					value={noOfFaqs}
 					onChange={(e) => setFaqsCount(e.target.value)}
@@ -58,6 +60,8 @@ function Form({
 					className="m-5 p-3 rounded"
 					type="number"
 					placeholder="Questions count"
+					min={1}
+					required
 					value={noOfQuestions}
 					onChange={(e) => setQuestionsCount(e.target.value)}
 				/>
@@ -73,7 +77,9 @@ function Form({
 				</button>
 			</div>
 			{!loading && Object.keys(chatGPTRes).length === 0 && (
-				<div className="text-center mt-5 font-bold text-2xl flex justify-center items-center">No result</div>
+				<div className="text-center mt-5 font-bold text-2xl flex justify-center items-center">
+					No result
+				</div>
 			)}
 			{!loading && Object.keys(chatGPTRes).length > 0 && (
 				<Reply repliesList={chatGPTRes} />
